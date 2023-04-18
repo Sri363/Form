@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AdaDoiiiCamp</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="device-width,scale=0.1">
+  <div class="head-para">
+  <h1 id="title">AdadoiiiCamp survey form</h1>
+  <p id="description">We appericiate that you were here!...</p>
+  <link rel="stylesheet" href="styles.css">
+  </div>
+  </head>
+  <body>
+  <form id="survey-form">
+    <fieldset>
+      <label for="name" id="name-label">Name
+      <input type="text" id="name" name="name" placeholder="Enter your name" required/></label>
+      <label for="email"id="email-label">Email
+        <input type="email" id="email" name="email" placeholder="Enter your email" required/>
+      </label>
+      <label for="number"id="number-label">
+        Enter your age(optional)
+        <input type="number" id="number" min="13" max="210" placeholder="Age" name="age"/>
+      </label>
+    </fieldset>
+    <fieldset><label for="dropdown" > What is your role?</label>
+      <select id="dropdown" name="role" class="role">
+        <option value="student">Student</option>
+        <option value="teacher">Teacher</option>
+        <option value="professional">Professional</option>
+      </select>
+      <p>How would you rate your skill?</p>
+      <label for="beginner">
+      <input type="radio" id="beginner" name="skill-rate" value="beginner" class="inline"> Beginner</label>
+      <label for="intermediate"><input type="radio" id="intermediate" name="skill-rate" value="intermediate"class="inline"> Intermediate</label>
+      <label for="expert" ><input id="expert" type="radio" name="skill-rate" value="expert"class="inline"/> Expert</label>
+    </fieldset>
+    <fieldset>
+      <p>What are you expert at?
+        </p>
+        <label><input type="checkbox" name="expert-at" value="html"class="inline"> HTML</label>
+        <label><input type="checkbox" name="expert-at" value="css"class="inline"> CSS</label>
+        <label><input type="checkbox" name="expert-at" value="javascript"class="inline"> JAVASCRIPT</label>
+    </fieldset>
+    <fieldset>
+      <label>Tell us more about you</label>
+      <textarea placeholder="I love coding..."></textarea>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit">
+    </form>
+    </body>
+  </html>
